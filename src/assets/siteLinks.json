@@ -1,36 +1,21 @@
 [
   {
-    "icon": "Blog",
-    "name": "博客",
-    "link": "https://blog.imsyy.top/"
+    "icon": "Blog1",
+    "name": "博客1",
+    "link": "https://docs.cz4u.me/"
   },
   {
-    "icon": "Cloud",
-    "name": "网盘",
-    "link": "https://pan.imsyy.top/"
+    "icon": "Microblog",
+    "name": "博客2",
+    "link": "https://docs.cz4u.me/"
   },
   {
-    "icon": "CompactDisc",
-    "name": "音乐",
-    "link": "https://music.imsyy.top/"
+    "icon": "Code",
+    "name": "在线代码编辑器",
+    "link": "https://docs.cz4u.me/"
   },
   {
-    "icon": "Compass",
-    "name": "起始页",
-    "link": "https://nav.imsyy.top/"
-  },
-  {
-    "icon": "Book",
-    "name": "网址集",
-    "link": "https://web.imsyy.top/"
-  },
-  {
-    "icon": "Fire",
-    "name": "今日热榜",
-    "link": "https://hot.imsyy.top/"
-  },
-  {
-    "icon": "Github",
+    "icon": "LaptopCode",
     "name": "GitHub",
     "link": "https://github.com/TomSmith163"
   }

@@ -81,14 +81,14 @@ onMounted(() => {
   cursorInit();
 
   // 屏蔽右键
-  document.oncontextmenu = () => {
-    ElMessage({
-      message: "为了浏览体验，本站禁用右键",
-      grouping: true,
-      duration: 2000,
-    });
-    return false;
-  };
+  // document.oncontextmenu = () => {
+  //   ElMessage({
+  //     message: "为了浏览体验，本站禁用右键",
+  //     grouping: true,
+  //     duration: 2000,
+  //   });
+  //   return false;
+  // };
 
   // 鼠标中键事件
   window.addEventListener("mousedown", (event) => {
@@ -106,20 +106,20 @@ onMounted(() => {
   window.addEventListener("resize", getWidth);
 
   // 控制台输出
-  const styleTitle1 = "font-size: 20px;font-weight: 600;color: rgb(244,167,89);";
-  const styleTitle2 = "font-size:12px;color: rgb(244,167,89);";
-  const styleContent = "color: rgb(30,152,255);";
-  const title1 = "無名の主页";
-  const title2 = `
- _____ __  __  _______     ____     __
-|_   _|  \\/  |/ ____\\ \\   / /\\ \\   / /
-  | | | \\  / | (___  \\ \\_/ /  \\ \\_/ /
-  | | | |\\/| |\\___ \\  \\   /    \\   /
- _| |_| |  | |____) |  | |      | |
-|_____|_|  |_|_____/   |_|      |_|`;
-  const content = `\n\n版本: ${config.version}\n主页: ${config.home}\nGithub: ${config.github}`;
-  console.info(`%c${title1} %c${title2} %c${content}`, styleTitle1, styleTitle2, styleContent);
-});
+  // const styleTitle1 = "font-size: 20px;font-weight: 600;color: rgb(244,167,89);";
+  // const styleTitle2 = "font-size:12px;color: rgb(244,167,89);";
+  // const styleContent = "color: rgb(30,152,255);";
+  // const title1 = "無名の主页";
+  // const title2 = `
+  //  _____ __  __  _______     ____     __
+  // |_   _|  \\/  |/ ____\\ \\   / /\\ \\   / /
+  //   | | | \\  / | (___  \\ \\_/ /  \\ \\_/ /
+  //   | | | |\\/| |\\___ \\  \\   /    \\   /
+  //  _| |_| |  | |____) |  | |      | |
+  // |_____|_|  |_|_____/   |_|      |_|`;
+  //   const content = `\n\n版本: ${config.version}\n主页: ${config.home}\nGithub: ${config.github}`;
+  //   console.info(`%c${title1} %c${title2} %c${content}`, styleTitle1, styleTitle2, styleContent);
+  // });
 
 onBeforeUnmount(() => {
   window.removeEventListener("resize", getWidth);
@@ -203,19 +203,23 @@ onBeforeUnmount(() => {
         // w 1201px ~ max
         padding-left: 0.7vw;
         padding-right: 0.25vw;
-        @media (max-width: 1200px) { // w 1101px ~ 1280px
+        @media (max-width: 1200px) {
+          // w 1101px ~ 1280px
           padding-left: 2.3vw;
           padding-right: 1.75vw;
         }
-        @media (max-width: 1100px) { // w 993px ~ 1100px
+        @media (max-width: 1100px) {
+          // w 993px ~ 1100px
           padding-left: 2vw;
           padding-right: calc(2vw - 6px);
         }
-        @media (max-width: 992px) { // w 901px ~ 992px
+        @media (max-width: 992px) {
+          // w 901px ~ 992px
           padding-left: 2.3vw;
           padding-right: 1.7vw;
         }
-        @media (max-width: 900px) { // w 391px ~ 900px
+        @media (max-width: 900px) {
+          // w 391px ~ 900px
           padding-left: 2vw;
           padding-right: calc(2vw - 6px);
         }
