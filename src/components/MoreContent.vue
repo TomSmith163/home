@@ -25,4 +25,23 @@
   width: 100%;
   height: 100%;
 }
+.ul {
+  display: flex;
+  flex-wrap: wrap; /* 自动换行 */
+  // list-style-type: none; /* 去掉默认的圆点样式 */
+  padding: 0;
+  margin: 0;
+}
+.li {
+  margin: 10px;
+  padding: 15px;
+  flex: 1 1 200px; /* 每个项目最小宽度为200px，自动调整 */
+  text-align: center;
+  border-radius: 8px;
+}
+@media screen and (max-width: 768px) {
+  .li {
+    flex: 1 1 100%; /* 在小屏幕上，每个项目最小宽度为100% */
+  }
+}
 </style>
