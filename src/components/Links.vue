@@ -55,6 +55,7 @@ import {
   Microblog,
   Code,
   Github,
+  CalendarTimes,
 } from "@vicons/fa"; // 注意使用正确的类别
 import { mainStore } from "@/store";
 import { Swiper, SwiperSlide } from "swiper/vue";
@@ -82,6 +83,10 @@ const siteIcon = {
   Book,
   Fire,
   LaptopCode,
+  Microblog,
+  Code,
+  Github,
+  CalendarTimes,
 };
 
 // 链接跳转
