@@ -27,4 +27,3 @@ dist-ssr
 # Package files
 package-lock.json
 .gitignore
-package.json
