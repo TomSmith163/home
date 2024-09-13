@@ -57,6 +57,7 @@ import {
   Github,
   CalendarTimes,
 } from "@vicons/fa"; // 注意使用正确的类别
+import { UserAdmin } from "@vicons/carbon";
 import { mainStore } from "@/store";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination, Mousewheel } from "swiper/modules";
@@ -87,6 +88,7 @@ const siteIcon = {
   Code,
   Github,
   CalendarTimes,
+  UserAdmin,
 };
 
 // 链接跳转
